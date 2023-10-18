@@ -55,21 +55,25 @@
 
 \begin{frame}{What is a Sandwich?}
     \begin{itemize}
-        \item Two pieces of bread?
-        \item A filling?
+        \item<2-> Two pieces of bread?
+        \item<3-> A filling?
         \vskip 1cm
-        \item The Oxford English Dictionary defines it as: ``Two slices of bread enclosing a filling (meat, cheese, fish, etc.).''
-    \end{itemize}
-    \vskip 1cm
+        \item<4-> The Oxford English Dictionary defines it as: ``Two slices of bread enclosing a filling (meat, cheese, fish, etc.).''
+        
+        \vskip 1cm
+        \item[]<5-> 
     \begin{alertblock}{But what about edge-cases!}
-        Are hot-dogs sandwiches...?
+        Are hot dogs sandwiches...?
     \end{alertblock}
+    \end{itemize}
 \end{frame}
 
-\begin{frame}{Are hot-dogs sandwiches?}
+
+\begin{frame}{Are hot dogs sandwiches?}
     \begin{figure}
-        \includegraphics[width=0.6\textwidth]{hotdog_meme.png}
-        \label{fig:hotdog-meme}
+        \includegraphics[width=0.5\textwidth]{hotdog_meme.png}
+        % \label{fig:hotdog-meme} -- 0.6
+        \caption{\label{fig:hotdog-meme}A hot dog experiencing existential dread \cite{imgur_classic_nodate}}
     \end{figure}
 \end{frame}
 
@@ -80,14 +84,14 @@
     \end{figure}
     \begin{figure}
         \includegraphics[width=0.8\textwidth]{ny_sandwich_law_2.jpg}
-        \label{fig:ny-sandwich-law-bottom}
+        \caption{\label{fig:ny-sandwich-law-bottom}New York State Tax Code classifying hot dogs as sandwiches}
     \end{figure}
 \end{frame}
 
 \begin{frame}{The ``Sandwich Alignment Chart'' attempted to bring order}
     \begin{figure}
-        \includegraphics[width=0.8\textwidth]{sandwich_alignment.jpg}
-        \label{fig:sandwich-alignment}
+        \includegraphics[width=0.75\textwidth]{sandwich_alignment.jpg}
+        \caption{\label{fig:sandwich-alignment}An alignment chart for what is considered a sandwich \cite{noauthor_matttomic_nodate}}
     \end{figure}
 \end{frame}
 
@@ -111,7 +115,7 @@
 \begin{frame}{Until @Phosphatide enlightened the world...}
     \begin{figure}
         \includegraphics[width=0.9\textwidth]{phosphatide.jpg}
-        \label{fig:phosphatide}
+        \caption{\label{fig:phosphatide}A tweet introducing the ``Cube Rule of Food''\cite{noauthor_phosphatide_nodate}}
     \end{figure}
 \end{frame}
 
@@ -209,7 +213,7 @@
         \begin{subfigure}{.4\textwidth}
           \centering
           \includegraphics[width=.8\linewidth]{taco/20_hotdog.jpg}
-          \caption{\label{fig:hot-dog-taco}Hot-dog}
+          \caption{\label{fig:hot-dog-taco}Hot dog}
         \end{subfigure}%
         \begin{subfigure}{.4\textwidth}
           \centering
@@ -319,11 +323,12 @@
 
 \begin{frame}{Is this enough?}
     \begin{itemize}
-        \item For these groupings to be equivalence classes, their union must cover the entire set!
-        \item In the initial proposal, this is not true! For example: foodstuffs with no starch (such as salads) are no in any of the classes
+        \item For these groupings to be equivalence classes, their union must cover the entire set
+        \item In the initial proposal, this is not true!
         \begin{itemize}
-            \item To address this, we need to introduce a couple more classes to capture the foods which don't conform to our (beautiful) system
+            \item For example, foodstuffs with no starch, such as salads, are not in any of the classes
         \end{itemize}
+        \item To address this, we need to introduce a couple more classes to capture the foods which don't conform to our (beautiful) system
     \end{itemize}
 \end{frame}
 
@@ -388,7 +393,7 @@
 \begin{frame}{The Cube Rule of Food -- Cake}
     \begin{figure}
         \includegraphics[width=0.5\textwidth]{cake/32_cake.png}
-        \caption{\label{fig:cake-diagram}The starch locations of the ``Cake'' equivalence class}
+        \caption{\label{fig:cake-diagram}The starch locations of the ``Cake'' grouping of foodstuffs}
     \end{figure}
 \end{frame}
 
@@ -414,7 +419,7 @@
 \begin{frame}{Is \textit{\textbf{this}} enough?}
     \begin{itemize}
         \item I'm not sure how you would actually prove this!
-        \item If you take a generous view of equivalence class membership, this is probably enough to cover all foods
+        \item However, if you take a generous view of equivalence class membership, this is probably enough to uniquely cover all foods
     \end{itemize}
 \end{frame}
 
@@ -451,7 +456,7 @@
 \begin{frame}{What if some of the properties don't hold?}
     \begin{figure}
         \includegraphics[width=0.6\textwidth]{algebraic_structures.png}
-        \label{fig:algebraic-structures-2}
+        \caption{\label{fig:algebraic-structures}Algebraic structures between magmas and groups \cite{ethaniel_english_2020}}
     \end{figure}
 \end{frame}
 
@@ -473,23 +478,44 @@
 \section{Part III - Defining Lasagne}
 
 
+\begin{frame}
+    \begin{figure}
+        \includegraphics[width=0.6\textwidth]{Garfield_Loves_Lasagna.png}
+        \caption{\label{fig:garfield-loves-lasagne}Garfield loves Lasagne \cite{garfield_lasagna}}
+    \end{figure}
+\end{frame}
+
 \begin{frame}{What is a Lasagne?}
     \begin{figure}
         \includegraphics[width=0.5\textwidth]{lasagne_unstacked.png}
-        \caption{\label{fig:lasagane-unstacked}A portion of Lasagne \textit{\href{https://www.epicurious.com/recipes/food/views/lasagne-bolognese-51193620}{image source Epicurious}}}
+        \caption{\label{fig:lasagane-unstacked}A portion of Lasagne \cite{nast_lasagna_nodate}}
     \end{figure}
 \end{frame}
 
 \begin{frame}{Is this still Lasagne?}
     \begin{figure}
-        \includegraphics[width=0.4\textwidth]{lasagne_stacked.png}
-        \caption{\label{fig:lasagane-stacked}If you cut a portion of Lasagne in half, and stack on half on top of the other -- it is still Lasagne!}
+        \begin{subfigure}{.3\textwidth}
+          \centering
+          \includegraphics[width=\linewidth]{lasagne_unstacked.png}
+        \end{subfigure}
+        \centering
+        \qquad\tikz[baseline=-\baselineskip]\draw[ultra thick,->] (0,1) -- ++ (1,0);\quad
+        \begin{subfigure}{.4\textwidth}
+          \centering
+          \includegraphics[width=.8\linewidth]{lasagne_stacked.png}
+        \end{subfigure}
+        \vskip 0.75cm
+        \caption{\label{fig:lasagane-stacked}If you cut a portion of Lasagne in half, and stack one half on top of the other -- it is still Lasagne!}
     \end{figure}
 \end{frame}
 
 \begin{frame}{Does Lasagne form a group?}
     \begin{itemize}
-        \item An element in the set $G$ is a Lasagne with $n \in \mathbb{N}_{0}$ layers
+        % \item An element in the set $G$ is a Lasagne with $n \in \mathbb{N}_{0}$ layers
+        \item $G$ is the set containing all Lasagnes with a non-negative number of layers, i.e. $G = \{$ n-layer Lasagne $|\ n \in \mathbb{N}_{0}\}$
+        % \begin{itemize}
+        %     \item i.e. $G = \{$ n-layer Lasagne $|\ n \in \mathbb{N}_{0}\}$
+        % \end{itemize} 
         \item The binary operation $\bullet$ is stacking two Lasagnes, one atop the other
         \vskip 1cm
         \item Do the four properties hold?
@@ -551,7 +577,7 @@
 \begin{frame}{So what does it form?}
     \begin{figure}
         \includegraphics[width=0.6\textwidth]{algebraic_structures.png}
-        \label{fig:algebraic-structures}
+        \caption{\label{fig:algebraic-structures-2}Algebraic structures between magmas and groups \cite{ethaniel_english_2020}}
     \end{figure}
 \end{frame}
 
@@ -595,11 +621,11 @@ instance Monoid Lasagne where
     \begin{itemize}
         \item<1-> Now that we know Lasagne is a monoid, we can use it to extend the ``Cube Rule of Food''!
         \begin{itemize}
-            \item<2-> Salad is isomorphic to the identity element of the Lasagne monoid
-            \item<3-> Pizza is isomorphic to the single-layer element of the Lasagne monoid
-            \item<4-> Sandwiches are isomorphic to the double-layer element in the monoid
+            \item Salad is isomorphic to the identity element of the Lasagne monoid
+            \item Pizza is isomorphic to the single-layer element of the Lasagne monoid
+            \item Sandwiches are isomorphic to the double-layer element in the monoid
             \vskip 0.5cm
-            \item<5-> \textbf{In fact, Lasagne forms a rigorous definition of Cake!}
+            \item<2-> \textbf{In fact, Lasagne forms a rigorous definition of Cake!}
         \end{itemize}
     \end{itemize}
 \end{frame}
@@ -631,6 +657,9 @@ instance Monoid Lasagne where
 \end{frame}
 
 \begin{frame}{Why is this useful?}
+\end{frame}
+
+\begin{frame}{Why is this useful?}
     \begin{center}
         \Huge\textbf{It isn't...}
     \end{center}
@@ -644,7 +673,16 @@ instance Monoid Lasagne where
     \end{center}
 \end{frame}
 
-\begin{frame}{Bibliography}
+\begin{frame}
+    \begin{center}
+        \Huge\textbf{Thanks for listening!} \\
+        \vskip 1cm
+        \Large\textit{I refuse to answer any questions...}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{Bibliography}
         \nocite{*}
         \bibliographystyle{IEEEtran}
         \bibliography{citations.bib}
