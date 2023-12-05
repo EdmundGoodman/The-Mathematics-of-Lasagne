@@ -30,6 +30,9 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 
+\usepackage[backend=biber,style=numeric, citestyle=ieee]{biblatex}
+\addbibresource{citations.bib}
+
 \usepackage{subcaption}
 \usepackage{tikz}
 \usepackage{minted}
@@ -37,7 +40,7 @@
 \title[The Mathematics of Lasagne]{The Mathematics of Lasagne}
 \author{Edmund Goodman}
 \institute[UWCS]{University of Warwick Computing Society}
-\date{18/10/2023}
+\date{06/12/2023}  % \date{18/10/2023}
 
 \begin{document}
 
@@ -45,13 +48,13 @@
   \titlepage
 \end{frame}
 
-% Uncomment these lines for an automatically generated outline.
-%\begin{frame}{Outline}
+% % Uncomment these lines for an automatically generated outline.
+% \begin{frame}{Outline}
 %  \tableofcontents
-%\end{frame}
+% \end{frame}
 
 
-\section{Part I - The Cube Rule of Food}
+\section{Part I - The Cube Rule of Food\footnote{\href{https://cuberule.com/}{https://cuberule.com/}}}
 
 \begin{frame}{What is a Sandwich?}
     \begin{itemize}
@@ -488,7 +491,7 @@
 \begin{frame}{What is a Lasagne?}
     \begin{figure}
         \includegraphics[width=0.5\textwidth]{lasagne_unstacked.png}
-        \caption{\label{fig:lasagane-unstacked}A portion of Lasagne \cite{nast_lasagna_nodate}}
+        \caption{\label{fig:lasagane-unstacked}A portion of Lasagne} %\cite{nast_lasagna_nodate}
     \end{figure}
 \end{frame}
 
@@ -674,19 +677,27 @@ instance Monoid Lasagne where
 \end{frame}
 
 \begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \node[xshift=-1.1cm,yshift=-1.3cm] at (current page.north east) {\includegraphics[width=0.15\textwidth]{qr-code.png}};
+    \end{tikzpicture}
     \begin{center}
         \Huge\textbf{Thanks for listening!} \\
         \vskip 1cm
+        \pause
         \Large\textit{I refuse to answer any questions...}
     \end{center}
 \end{frame}
 
 
-\begin{frame}[allowframebreaks]{Bibliography}
-        \nocite{*}
-        \bibliographystyle{IEEEtran}
-        \bibliography{citations.bib}
-\end{frame}
+% \begin{frame}[allowframebreaks]{Bibliography}
+%         \nocite{*}
+%         \bibliographystyle{IEEEtran}
+%         \bibliography{citations.bib}
+% \end{frame}
 
+\begin{frame}[t,allowframebreaks]
+\frametitle{Bibliography}
+\printbibliography[heading=none]
+\end{frame}
 
 \end{document}
