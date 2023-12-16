@@ -4,7 +4,7 @@
 
 ## Watch it on YouTube
 
-[![Watch the video](images/youtube_thumbnail.jpg)](https://youtu.be/9l9hcSIAAtM)
+[![Watch the video](images/youtube_thumbnail_controls.png)](https://youtu.be/9l9hcSIAAtM)
 
 ## Abstract
 
