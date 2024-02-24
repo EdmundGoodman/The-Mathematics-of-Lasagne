@@ -12,7 +12,7 @@ We introduce a system for categorising foodstuffs based on the location of their
 
 ## Why does this exist?
 
-As part of my role as an academic officer for the [University of Warwick Computing Society](https://uwcs.co.uk/), I help organise "Lightning Talks", which are "short (~20 minute) talks about anything and everything to do with computer science".
+As part of my role as an academic officer for the [University of Warwick Computing Society](https://uwcs.co.uk/) in the 2023-24 academic year, I helped organise "Lightning Talks", which are "short (~20 minute) talks about anything and everything to do with computer science".
 
 I wrote and delivered this talk as one of the Lightning Talks in the Michaelmas term of 2023. The slides [^2] and source code [^3] for this talk are available on GitHub.
 
